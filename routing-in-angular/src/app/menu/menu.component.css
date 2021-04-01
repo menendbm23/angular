@@ -1,0 +1,21 @@
+nav {
+    background-color: #e68201;
+}
+
+ul {
+    margin:0;
+    padding:0;
+}
+
+li {
+    display: inline-block;
+}
+a {
+    text-decoration: none;
+    color: blue;
+    padding: 0 10px;
+}
+a:hover {
+    color:white;
+    background-color: black;
+}
