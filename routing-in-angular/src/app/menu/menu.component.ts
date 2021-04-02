@@ -11,7 +11,9 @@ export class MenuComponent implements OnInit {
     { display: 'Home', route: '/home' },
     { display: 'Users', route: '/users/list' },
     { display: 'About', route: '/about' },
-    { display: 'Help', route: '/help' }
+    { display: 'Help', route: '/help' },
+    { display: 'Login', route: '/login' }
+
   ]
 
   constructor() { }

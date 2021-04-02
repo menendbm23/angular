@@ -10,11 +10,16 @@ import { User } from './user.class';
 export class UserService {
 
   baseurl: string = "http://localhost:8080/api/users/";
+
   
   constructor(
     private http:HttpClient
     ) { }
   
+  login(username: string, password: string): Observable<User> {
+    return this.http.get(`${this.baseurl}?username=${username}&password=${password}`) as Observable<User>;
+  }
+
   list(): Observable<User[]> {
     return this.http.get(`${this.baseurl}`) as Observable<User[]>;
     }
